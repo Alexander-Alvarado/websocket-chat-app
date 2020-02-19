@@ -1,4 +1,4 @@
-var socket = io.connect("http://127.0.0.1:5500/");
+var socket = io.connect("https://aa-websocket-chat.herokuapp.com/");
 
 $(function() {
   $("#send").click(function() {

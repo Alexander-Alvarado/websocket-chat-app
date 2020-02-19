@@ -2,9 +2,9 @@ var express = require("express");
 var socket = require("socket.io");
 
 var app = express();
-
-var server = app.listen(5500, function() {
-  console.log("listening on port 5500");
+var PORT = process.env.PORT || 5500;
+var server = app.listen(PORT, function() {
+  console.log("listening on port", PORT);
 });
 
 app.use(express.static(__dirname + "/public/"));
