@@ -7,7 +7,7 @@ var server = app.listen(5500, function() {
   console.log("listening on port 5500");
 });
 
-app.use(express.static("docs"));
+app.use(express.static(__dirname + "/public/"));
 
 var io = socket(server);
 
